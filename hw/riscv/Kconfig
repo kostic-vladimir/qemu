@@ -119,3 +119,8 @@ config SPIKE
     select HTIF
     select RISCV_ACLINT
     select SIFIVE_PLIC
+
+config CUSTOM_MACHINE
+    bool
+    default y
+    depends on RISCV32 || RISCV64
